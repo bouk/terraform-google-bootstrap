@@ -131,24 +131,6 @@ variable "folder_id" {
   default     = ""
 }
 
-variable "terraform_version" {
-  description = "Default terraform version."
-  type        = string
-  default     = "0.12.29"
-}
-
-variable "terraform_version_sha256sum" {
-  description = "sha256sum for default terraform version."
-  type        = string
-  default     = "872245d9c6302b24dc0d98a1e010aef1e4ef60865a2d1f60102c8ad03e9d5a1d"
-}
-
-variable "terraform_validator_release" {
-  description = "Default terraform-validator release."
-  type        = string
-  default     = "2020-09-24"
-}
-
 variable "cloudbuild_plan_filename" {
   description = "Path and name of Cloud Build YAML definition used for terraform plan."
   type        = string
